@@ -47,8 +47,8 @@ fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are:
 
-mean(): Mean value
-std(): Standard deviation
+mean(): the average value of the mean value (features whose name contains "-mean()")
+std(): the average value of the standard deviation (features whose name contains "-std()")
 
 The complete list of variables of each feature vector in the original data is available in the file 'features.txt' belonging to the original distribution.
 
@@ -57,7 +57,3 @@ Additional columns are:
 - 'subject_identifier': the numeric subject identifier the record belongs to
 
 - 'activity_name': one of 'LAYING', 'SITTING', 'STANDING', 'WALKING', 'WALKING_DOWNSTAIRS', 'WALKING_UPSTAIRS'
-
-- 'type': one of 'train' or 'test', depending if the record, in the original distribution, was selected for training or testing respectively.
-
-The "har_merged.txt" table includes each individual recording. The "har_summarised.txt" table includes only the average of each variable for each activity and each subject; the column names are unchanged.

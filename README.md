@@ -26,7 +26,7 @@ The dataset includes the following files:
 
 - 'CodeBook.md'
 
-- 'har_merged.txt': a tidy, merged version of the files listed below from the original distribution. Only the measurements on the mean and standard deviation for each of the original measurements are included. Appropriate descriptive variable names are used to describe the columns in the data, instead of the original feature codes. Descriptive activity names also replace the numerical equivalent in the original data.
+- 'har_averages.txt': a tidy, merged version of the files listed below from the original distribution, including only the average values of the mean and standard deviation for each measurement, grouped for each activity and each subject. Appropriate descriptive variable names are used to describe the columns in the data, instead of the original feature codes. Descriptive activity names also replace the numerical equivalent in the original data.
 
     - 'features.txt': List of all features.
 
@@ -42,9 +42,10 @@ The dataset includes the following files:
 
     - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-- 'har_summarised.txt': from the data in 'har_merged.txt', a second tidy dataset with the average of each variable for each activity and each subject.
+The script
+==========
 
-The R code to generate the files from the original distribution is also included: 'run_analysis.R'. The code expects the original distribution to be available in the 'UCI-HAR-Dataset' folder.
+The R code to generate the files from the original distribution is also included: 'run_analysis.R'. The code is fully commented to describe its workings. It expects the original data distribution to be available in the 'UCI-HAR-Dataset' folder.
 
 Notes:
 ======

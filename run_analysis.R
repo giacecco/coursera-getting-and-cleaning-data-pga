@@ -86,9 +86,6 @@ for (type in c("train", "test")) {
     # Integrates the activity names in the data 
     temp_data$activity_name <- temp_class_labels$activity_name
 
-    # Marks all rows as train or test data using a new column "type"
-    temp_data$type = type
-    
     # Copies the data to the merged dataset
     har_merged <- rbind(har_merged, temp_data)
 
@@ -114,5 +111,4 @@ suppressWarnings(
 )
 
 # as from specifications...
-write.table(har_merged, file = "har_merged.txt", eol = "\n", row.name = FALSE)
 write.table(har_averages, file = "har_averages.txt", eol = "\n", row.name = FALSE)
